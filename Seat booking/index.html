@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Booking Application</title>
+    <!-- normalization -->
+    <link rel="stylesheet" href="./styles/normalization.css">
+    <!-- styles css -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="movie-container">
+        <label for="movie">Select Movie</label>
+        <select name="movie-name" id="movies">
+            <option value="120">
+                Pushpa-1
+            </option>
+            <option value="150">
+                Legend
+            </option>
+            <option value="130">
+                Bheemala Nayak
+            </option>
+        </select>
+    </div>
+    <ul class="seat-container">
+        <li>
+            <div class="seat"></div>
+            <small> N/A </small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Seat selected </small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small> Seat Occupied </small>
+        </li>
+    </ul>
+    <div class="screen-container" id="selectSeat">
+        <div class="screen"></div>
+        <diV class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </diV>
+        <diV class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </diV>
+        <diV class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </diV>
+        <diV class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+        </diV>
+        <diV class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </diV>
+        <diV class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </diV>
+    </div>
+    <p class="sentence">
+        You have selected <span id="totalSeat" class="bold">0</span> for a price of ₹ <span id="totalCost" class="bold">0</span>
+    </p>
+    <script src="./java script/scripy.js"></script>
+</body>
+</html>

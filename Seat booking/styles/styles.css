@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+:root{
+    --clr-drak:rgb(68, 66, 66);
+    --clr-green:rgb(124, 239, 16);
+    --clr-white:white;
+    --clr-main:rgb(222, 142, 250);
+
+}
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+        /* Movie-continer */
+  .movie-container{
+    margin-bottom: 2rem;
+  }
+
+
+  #movie{
+    border-radius: 8px;
+    margin-left: 0.5rem;
+  }
+       /* .seat-container */
+  .seat{
+    background-color: var(--clr-drak);
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .seat.selected{
+    background-color:var(--clr-green);
+  }
+
+  .seat.occupied{
+    background-color: var(--clr-white);
+ }
+.seat-container{
+    height: 2.5rem;
+    width: 20rem;
+    background-color: rgba(117, 113, 113, 0.7);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+  
+.seat-container li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+
+.seat:hover{
+    cursor: pointer;
+}
+
+.seat-container .seat:hover{
+    cursor: default;
+}
+
+.seat.occupied:hover{
+    cursor: default;
+}
+
+.screen-container{
+    perspective: 1100px;
+}
+
+
+.screen{
+    background-color: var(--clr-white);
+    height: 10rem;
+    width:20rem;
+    align-items: center;
+    transform: rotateX(-80deg);
+}
+
+
+.row{
+    display: flex;
+}
+
+.sentence{
+    margin: 1.5rem 0;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.seat:nth-of-type(3){
+    margin-left: 1.8rem;
+}
+
+.seat:nth-last-of-type(3){
+    margin-left: 1.8rem;
+}
